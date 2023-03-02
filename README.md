@@ -12,8 +12,10 @@ Let's talk! ü
   
 </p>
 <dt>
-<a href="https://ryecorral.github.io/rc.github.io/"> My First Ever Website</a>
-<a href="https://ryecorral.github.io/rc.github.io/WorldWideWeb"> World Wide Web</a>
+<a href="https://ryecorral.github.io/rc.github.io/"># My First Ever Website</a>
+</dt>
+<dt>
+<a href="https://ryecorral.github.io/rc.github.io/WorldWideWeb"># World Wide Web</a>
 </dt>
 
 </body>
