@@ -18,7 +18,7 @@ Let's talk! ü
 <a href="https://ryecorral.github.io//WorldWideWeb"># World Wide Web</a>
 </dt>
 <dt>
-<a href="https://ryecorral.github.io//rcblog"># My Personal Blog</a>
+<a href="https://ryecorral.github.io/Home"># My Personal Blog</a>
 </dt>
 </body>
 </html>
