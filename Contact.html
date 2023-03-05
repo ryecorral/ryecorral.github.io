@@ -44,6 +44,46 @@
     a:hover {left: 0;}
     #Subscribe { top: 40px; background-color: rgb(155, 133, 8);} 
 
+body, html { 
+  height: 80%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-image { opacity: 0.8; margin-top: 500px; margin-bottom: 0px; margin-left: 0px; position: absolute; bottom: 30px;
+  background-image: url("https://ryecorral.github.io/ImageBank/Hero.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+
 </style>
 </head>
 <body>
@@ -58,6 +98,14 @@
         <a href="https://ryecorral.github.io/Projects" id="Projects">Projects</a>
         <a href="https://ryecorral.github.io/Blog" id="Blog">Blog</a>
     </div>
+
+    <div class="hero-image">
+        <div class="hero-text">
+          <h1 style="font-size:50px">I am Ryan Corral</h1>
+          <p>And I'm a Full-Stack Web Developer</p>
+          <button>Hire me</button>
+        </div>
+      </div>
 
 </body>
 </html>
