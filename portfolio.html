@@ -12,56 +12,79 @@
         background-repeat: no-repeat;
         background-attachment: fixed;  
         background-size: cover;}
+    
      #mySidenav 
      a {position: absolute;
-        left: -80px;
-        transition: 0.3s;
+        right: -60px;
+        transition: 0.2s;
         padding: 15px;
         width: 100px;
         text-decoration: none;
         font-size: 20px;
         color: white;
         border-radius: 0 5px 5px 0;}
-     #mySidenav a:hover {left: 0;}
+     #mySidenav 
+     a:hover {right: 0;}
+        #Home { top: 20px; background-color: #940404;}
+        #About { top: 80px; background-color: #04AA6D;}
+        #Blog { top: 140px; background-color: #2196F3;}
+        #Projects { top: 200px; background-color: #f44336;}
+        #Contact { top: 260px; background-color: #555}
+    
+        #subscribe
+    a {position: absolute;
+        left: -60px;
+        transition: 0.2s;
+        padding: 30px;
+        width: 100px;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        border-radius: 0 5px 5px 0;}
+    #subscribe
+    a:hover {left: 0;}
+        #Subscribe { top: 40px; background-color: rgb(155, 133, 8);}
 
-#Home {
-  top: 20px;
-  background-color: #aa0404;
+    .blink { animation: blinker 10s linear infinite; color: red; font-family: sans-serif;}
+        @keyframes blinker { 50% { opacity: 0; } }
+    h1 { font-size: 60px; }
+    p { font-size: 30px;}
+    img {border-radius: 50%;}
+    img:hover { 
+        animation: shake 0.5s;
+        animation-iteration-count: infinite;}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
-#About {
-  top: 80px;
-  background-color: #04AA6D;
-}
-
-#Blog {
-  top: 140px;
-  background-color: #2196F3;
-}
-
-#Projects {
-  top: 200px;
-  background-color: #f44336;
-}
-
-#Contact {
-  top: 260px;
-  background-color: #555
-}
-    </style>
+</style>
 </head>
 <body>
     <div id="mySidenav" class="sidenav">
-        <a href="https://ryecorral.github.io/Home.html" id="Home"><img src="https://ryecorral.github.io/ImageBank/RYELogo.jpg " alt="RYE Logo" style="width:30px;height:20px;"></a>
+        <a href="#" id="Home">Home</a>
         <a href="#" id="About">About</a>
         <a href="#" id="Blog">Blog</a>
         <a href="#" id="Projects">Projects</a>
         <a href="#" id="Contact">Contact</a>
-      </div>
-      
-      <div style="margin-left:80px; color: white">
-        <h2>Hoverable Sidenav Buttons</h2>
-        <p>Hover over the buttons in the left side navigation to open them.</p>
-      </div>
+    </div>
+    <div style="margin-left:80px; color: white">
+        <h1 class="blink">WELCOME GUEST!</h1>
+        <p><marquee width="60%" direction="left" height="100px">Where browser's future, starts today.. Check what I got by picking a page &#128526; &#128073; </marquee></p>
+        <img src="https://ryecorral.github.io/ImageBank/RYELogo2.jpg" alt="RYE Logo" width="300" height="300">
+    </div>
+    <div id="subscribe" class="subscribe">
+        <a href="#" id="Subscribe">Subscribe</a>
+    </div>
 </body>
 </html>
