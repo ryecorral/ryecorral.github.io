@@ -12,6 +12,58 @@
         background-repeat: no-repeat;
         background-attachment: fixed;  
         background-size: cover;}
+
+        { font-family: Arial;  margin: 0;}
+      * { box-sizing: border-box; }
+      img { vertical-align: middle;}
+    .container { position: relative;}
+    .mySlides {  display: none;}
+    .cursor { cursor: pointer;}
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 40%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+        background-color: aqua; opacity: 0.8;
+        }
+    .prev { left: 0; border-radius: 3px 0 0 3px;}
+    .next { right: 0; border-radius: 3px 0 0 3px;}
+    .prev:hover,
+    .next:hover {  background-color: rgba(0, 0, 0, 0.8);}
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+        }
+    .caption-container {
+        text-align: center;
+        background-color: #222;
+        padding: 2px 16px;
+        color: white;
+        }
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+    .column {
+        float: left;
+        width: 16.66%;
+        }
+    .demo { opacity: 0.6;}
+    .active,
+    .demo:hover { opacity: 1; }
     
      #mySidenav 
      a {position: absolute;
@@ -35,7 +87,7 @@
         left: -60px;
         transition: 0.2s;
         padding: 30px;
-        width: 100px;
+        width: 150px;
         text-decoration: none;
         font-size: 20px;
         color: white;
@@ -43,6 +95,13 @@
     #subscribe
     a:hover {left: 0;}
     #Subscribe { top: 40px; background-color: rgb(155, 133, 8);} 
+
+    h1 { position: static; text-align: center;font-size: 60px; text-shadow: 2px 2px 5px rgb(6, 141, 252);}
+    p { position: absolute; left: 200px; top: 100px; right: 700px; 
+        text-align: center;font-size: 20px; 
+        width: 600px;
+        height: 400px;
+        border: 0px solid black; }
 
 </style>
 </head>
@@ -58,6 +117,114 @@
         <a href="https://ryecorral.github.io/Projects" id="Projects">Projects</a>
         <a href="https://ryecorral.github.io/Contact" id="Contact">Contact</a>
     </div>
+
+    <h1 style="margin-left:100px; margin-top: 30px; color: white">A Father's Life..</h1>
+    
+    <p style="margin-left:300px; margin-top:50px; color: white">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur error quos voluptas facere eveniet commodi quis, 
+         minus, aspernatur, asperiores quia voluptate magnam harum incidunt? Aliquid nostrum in optio qui nisi. 
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur error quos voluptas facere eveniet commodi quis, 
+         minus, aspernatur, asperiores quia voluptate magnam harum incidunt? Aliquid nostrum in optio qui nisi.
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur error quos voluptas facere eveniet commodi quis, 
+         minus, aspernatur, asperiores quia voluptate magnam harum incidunt? Aliquid nostrum in optio qui nisi. 
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur error quos voluptas facere eveniet commodi quis, 
+         minus, aspernatur, asperiores quia voluptate magnam harum incidunt? Aliquid nostrum in optio qui nisi.
+        
+    </p>
+
+    <h2 style="text-align:center; margin-left: 30px; margin-top:500px; color: white;"><b>Slideshow Gallery</b></h2>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="https://ryecorral.github.io/ImageBank/Photo1.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="https://ryecorral.github.io/ImageBank/Photo2.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="https://ryecorral.github.io/ImageBank/Photo3.jpg" style="width:50%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="https://ryecorral.github.io/ImageBank/Photo4.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="https://ryecorral.github.io/ImageBank/Photo5.jpg" style="width:50%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="https://ryecorral.github.io/ImageBank/Photo6.jpg" style="width:50%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="https://ryecorral.github.io/ImageBank/Photo1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Photo 1">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://ryecorral.github.io/ImageBank/Photo2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Photo 2">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://ryecorral.github.io/ImageBank/Photo3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Photo 3">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://ryecorral.github.io/ImageBank/Photo4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Photo 4">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://ryecorral.github.io/ImageBank/Photo5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Photo 5">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="https://ryecorral.github.io/ImageBank/Photo6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Photo 6">
+    </div>
+  </div>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
 
 </body>
 </html>
