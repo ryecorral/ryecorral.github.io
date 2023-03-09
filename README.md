@@ -20,5 +20,8 @@ Let's talk! ü
 <dt>
 <a href="https://ryecorral.github.io/portfolio"># My Profile</a>
 </dt>
+<dt>
+<a href="https://ryecorral.github.io/skill-cards/skill-cards"># My Skills</a>
+</dt>
 </body>
 </html>
