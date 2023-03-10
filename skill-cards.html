@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=R, initial-scale=1.0">
+    <title>Ryan Corral Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Lobster&family=Montserrat&family=Pinyon+Script&family=Poppins&display=swap" rel="stylesheet">
+  <style>
+     body, html
+        {background-image: url('https://ryecorral.github.io/ImageBank/SkillCardBG.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;  
+        background-size: cover;
+        height: 100%;
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        align-items: center;
+        }
+
+        * { box-sizing: content-box; flex-flow: row;}
+            .column {
+              float: left;
+              width: 30%;
+              padding: 0 10px;
+              margin-top: 5px; margin-bottom: 10px;
+            }
+            .row {margin: 50px 0px 0px 100px;}
+            .row:after {
+              content: "";
+              display: table;
+              clear: both;
+            }
+            @media screen and (max-width: 600px) {
+              .column {
+                width: 300%;
+                display: block;
+                margin-bottom: 50px;
+              }
+            }
+            .card { width: 300px;
+              box-shadow: 0 20px 40px 0 black;
+              padding: 16px;
+              border: 1px black;
+              text-align: center;
+              background-color: beige;
+            }
+
+
+            @keyframes shake {
+              0% { transform: translate(1px, 1px) rotate(0deg); }
+              10% { transform: translate(-1px, -2px) rotate(-1deg); }
+              20% { transform: translate(-3px, 0px) rotate(1deg); }
+              30% { transform: translate(3px, 2px) rotate(0deg); }
+              40% { transform: translate(1px, -1px) rotate(1deg); }
+              50% { transform: translate(-1px, 2px) rotate(-1deg); }
+              60% { transform: translate(-3px, 1px) rotate(0deg); }
+              70% { transform: translate(3px, 1px) rotate(-1deg); }
+              80% { transform: translate(-1px, -1px) rotate(1deg); }
+              90% { transform: translate(1px, 2px) rotate(0deg); }
+              100% { transform: translate(1px, -2px) rotate(-1deg); }
+            }
+
+  </style>
+</head>
+<body>
+   
+    <div class="Skill-Cards-container"></div>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <h3 style="animation: shake 0.5s; animation-iteration-count: infinite; margin-top: 20px;"><img src="https://ryecorral.github.io/ImageBank/LogoHtmlCss.png" alt="HtmlCss"  width="70%"></h3>
+          <p><b>HTML5 and CSS3</b></p>
+          <p>I got skills in using HTML5 <br>and CSS3 in creating websites,and still improving.</p>
+        </div>
+      </div>
+    
+      <div class="column">
+        <div class="card">
+          <h3 style="animation: shake 0.5s; animation-iteration-count: infinite;"><img src="https://ryecorral.github.io/ImageBank/LogoAuto.png" alt="Automotive" width="30%" ></h3>
+          <p><b>Automotive Servicing</b></p>
+          <p>I got National Certificates I and II for automotive servicing in mechanical and electrical.</p>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <h3 style="animation: shake 0.5s; animation-iteration-count: infinite;"><img src="https://ryecorral.github.io/ImageBank/LogoBasket.png" alt="Basket"  width="30%"></h3>
+          <p><b>BASKETBALL</b></p>
+          <p>I'm very fond and confident with my basketball skills. Love watching NBA too.</p>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <h3 style="animation: shake 0.5s; animation-iteration-count: infinite;"><img src="https://ryecorral.github.io/ImageBank/LogoMSoffice.png" alt="MSoffice" width="70%" ></h3>
+          <p><b>MicroSoft Office</b></p>
+          <p>I'm very savvy working with Microsoft office tools. And any other applications and tools actually.</p>
+        </div>
+      </div>
+    </div>
+    
+
+</body>
+</html>
