@@ -21,7 +21,7 @@ Let's talk! ü
 <a href="https://ryecorral.github.io/portfolio"># My Profile</a>
 </dt>
 <dt>
-<a href="https://ryecorral.github.io/skill-cards/skill-cards"># My Skills</a>
+<a href="https://ryecorral.github.io/skill-cards"># My Skills</a>
 </dt>
 </body>
 </html>
