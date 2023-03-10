@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=R, initial-scale=1.0">
     <title>Ryan Corral Portfolio</title>
-    <style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Lobster&family=Montserrat&family=Pinyon+Script&family=Poppins&display=swap" rel="stylesheet">
+<style>
      body 
         {background-image: url('https://ryecorral.github.io/ImageBank/ProfileBG.jpg');
         text-align: center;
@@ -45,11 +48,11 @@
     a:hover {left: 0;}
         #Subscribe { top: 40px; background-color: rgb(155, 133, 8);}
 
-    .blink { animation: blinker 10s linear infinite; color: red; font-family: sans-serif;}
+    .blink { animation: blinker 10s linear infinite; color: red; font-family: 'Montserrat', sans-serif;}
         @keyframes blinker { 50% { opacity: 0; } }
     
     h1 { font-size: 60px; text-shadow: 2px 2px 5px rgb(246, 238, 238); }
-    p { font-size: 30px; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;}
+    p { font-family: 'Poppins', sans-serif; font-size: 30px; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;}
 
     img {border-radius: 50%;  
         animation: shake 0.5s;
@@ -69,6 +72,14 @@
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
 </style>
 </head>
 <body>
@@ -81,8 +92,8 @@
         <a href="https://ryecorral.github.io/Contact" id="Contact">Contact</a>
     </div>
 
-    <div style="margin-left:80px; color: white">
-        <h1 class="blink">WELCOME GUEST!</h1>
+    <div style="margin-left:80px; color: white;">
+        <h1 class="blink"><b>WELCOME GUEST!</b></h1>
         <p><marquee width="60%" direction="left" height="100px">Where browser's future, starts today.. Check what I got by picking a page &#128526; &#128073; </marquee></p>
         <img src="https://ryecorral.github.io/ImageBank/RYELogo2.jpg" alt="RYE Logo" width="300" height="300">
     </div>
@@ -90,5 +101,8 @@
         <a href="https://ryecorral.github.io/Subscribe" id="Subscribe">Subscribe</a>
     </div>
 
+    <div class="footer" style="font-size: xx-small; text-align: left; color: white;opacity: 70%;"> 
+        Background Image Credit: <a href="http://www.vecteezy.com">www.vecteezy.com</a>
+      </div>
 </body>
 </html>
