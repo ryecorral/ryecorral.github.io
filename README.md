@@ -24,7 +24,7 @@ Let's talk! ü
 <a href="https://ryecorral.github.io/skill-cards"># My Skills</a>
 </dt>
 <dt>
-<a href="https://ryecorral.github.io/Layout-Semantic/semantic"># Layout & Semntics Activity</a>
+<a href="https://ryecorral.github.io/Layout-Semantic/semantic"># Layout & Semantics Activity</a>
 </dt>
 </body>
 </html>
