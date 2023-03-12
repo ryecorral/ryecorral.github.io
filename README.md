@@ -27,7 +27,7 @@ Let's talk! ü
 <a href="https://ryecorral.github.io/Layout-Semantic/semantic"># Layout & Semantics Activity</a>
 </dt>
 <dt>
-<a href="https://ryecorral.github.io/FrontEndMentorChallenge/qrcode"># Layout & Semantics Activity</a>
+<a href="https://ryecorral.github.io/FrontEndMentorChallenge/qrcode"># Frontend Mentor CHallenge</a>
 </dt>
 </body>
 </html>
